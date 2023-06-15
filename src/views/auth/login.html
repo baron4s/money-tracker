@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Story App</title>
+  </head>
+  <body>
+    <section style="background-color: #eee; min-height: 100vh">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center min-vh-100">
+          <div class="col-12 col-md-10">
+            <div class="card rounded-3 text-black">
+              <div class="row g-0">
+                <div class="col-md-6 col-12 d-flex align-items-center">
+                  <div class="card-body p-md-2 p-lg-5 mx-md-4">
+                    <h2 class="text-center">Welcome Back</h2>
+                    <form class="py-3" id="formLogin" novalidate>
+                      <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input-with-validation inputType="email" inputId="inputEmail" invalidFeedbackMessage="Harap Isi bagian ini" required></input-with-validation>
+                      </div>
+                      <div class="mb-3">
+                        <label for="email">Password</label>
+                        <input-with-validation inputType="password" inputId="inputPassword" invalidFeedbackMessage="Harap Isi bagian ini" required></input-with-validation>
+                      </div>
+                      <div class="btn-group d-flex">
+                        <a href="../addStory.html" class="flex-grow-0 btn btn-warning" type="button" id="guestUser">Sebagai Tamu</a>
+                        <button class="flex-grow-1 btn btn-dark" type="submit">Log In</button>
+                      </div>
+                    </form>
+                    <div class="mt-4 text-center">Belum punya akun? <a href="register.html">Register Sekarang</a></div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12 img-login"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

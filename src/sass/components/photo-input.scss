@@ -1,0 +1,9 @@
+.custom-border {
+    border: dashed 2px;
+
+    .custom-ratio {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}

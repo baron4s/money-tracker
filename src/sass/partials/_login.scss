@@ -1,0 +1,15 @@
+.img-login {
+    background: url('../public/images/login-register.jpg');
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+
+@media(max-width:768px) {
+    .card {
+        .img-login {
+            display: none;
+        }
+    }
+}

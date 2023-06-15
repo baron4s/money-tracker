@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Story App</title>
+  </head>
+
+  <body>
+    <header>
+      <nav-app brandName="Story App"></nav-app>
+    </header>
+
+    <main>
+      <section class="page">
+        <div class="container py-3">
+          <h1 class="fs-3 fw-bold">Tambah Story</h1>
+        </div>
+      </section>
+      <section class="form-addStory">
+        <div class="container">
+          <form class="row" id="submitStory" novalidate>
+            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+              <label for="photoStory" class="form-label">Photo Story</label>
+              <input-photo-with-preview imgId="photoStory" inputId="filePhotoStory" invalidFeedBackMessage=" Silahkan isi terlebih dahulu" defaultImage="../images/choose-img.png" required> </input-photo-with-preview>
+            </div>
+            <div class="col-12 col-lg-6 mb-3">
+              <label for="description" class="form-label">Deskripsi</label>
+              <input-description inputId="inputDescription" invalidFeedbackMessage="Silahkan isi terlebih dahulu" required></input-description>
+            </div>
+            <div class="col-12 text-end">
+              <button class="btn btn-dark" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer d-flex justify-content-center my-3">
+        <span>CopyRight 2023</span>
+      </div>
+    </footer>
+  </body>
+</html>

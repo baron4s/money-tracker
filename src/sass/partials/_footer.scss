@@ -1,0 +1,5 @@
+@use '../abstracs/mixins' as mix;
+
+.footer {
+    @include mix.center-box-horizontal
+}

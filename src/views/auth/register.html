@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Story App</title>
+  </head>
+  <body>
+    <section style="background-color: #eee; min-height: 100vh">
+      <div class="container-fluid py-5">
+        <div class="row d-flex justify-content-center align-items-center min-vh-100">
+          <div class="col-12 col-md-10">
+            <div class="card rounded-3 text-black">
+              <div class="row g-0">
+                <div class="col-md-6 col-12 d-flex align-items-center">
+                  <div class="card-body p-md-2 p-lg-5 mx-md-4">
+                    <h2 class="text-center">Register</h2>
+                    <form class="py-3" id="formRegister" novalidate>
+                      <div class="mb-3">
+                        <label for="name">Nama</label>
+                        <input-with-validation inputType="text" inputId="inputName" invalidFeedbackMessage="Harap Isi bagian ini" required></input-with-validation>
+                      </div>
+                      <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input-with-validation inputType="email" inputId="inputEmail" invalidFeedbackMessage="Harap Isi bagian ini" required></input-with-validation>
+                      </div>
+                      <div class="mb-5">
+                        <label for="email">Password</label>
+                        <input-with-validation inputType="password" inputId="inputPassword" invalidFeedbackMessage="Harap Isi bagian ini" required></input-with-validation>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-dark w-100">Register</button>
+                      </div>
+                    </form>
+                    <div class="mt-4 text-center">Sudah punya akun? <a href="login.html">Login </a></div>
+                  </div>
+                </div>
+                <div class="col-md-6 img-register"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

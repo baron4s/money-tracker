@@ -1,0 +1,13 @@
+.dropdown-menu {
+    min-width: 10rem;
+    padding: 0;
+
+    .dropdown-item {
+        padding: 0 0.8rem;
+
+        &:active {
+            background-color: #f1f1f1;
+            color: black
+        }
+    }
+}
